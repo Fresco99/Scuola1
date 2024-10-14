@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const TraJson=localStorage.getItem('TraJson');
+        const dati= TraJson.parse();
+        document.getElementById("stampa").innerHTML=dati[1].nome;
+        document.getElementById("stampa").innerHTML=dati[1].nome;
+        document.getElementById("stampa").innerHTML=dati[1].nome;
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <p id="stampa"></p>
+
+    </div>
+</body>
+</html>
