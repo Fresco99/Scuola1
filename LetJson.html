@@ -31,7 +31,7 @@
                 var DatIns = JSON.parse(x.responseText);
                 var tBody = document.getElementById("Stampa").getElementsByTagName("BodyTabella")[0];
                 for (var i = 0; i < data.length; i++) {
-                    var DatiInseriti = data[i];
+                    var DatiInseriti = DatIns[i];
                     var riga = "<tr>" +
                         "<td>" + DatiInseriti.Nome + "</td>" +
                         "<td>" + DatiInseriti.Cognome + "</td>" +
