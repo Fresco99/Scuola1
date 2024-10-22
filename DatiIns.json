@@ -1,0 +1,26 @@
+[
+    {
+        "Nome": "Simone",
+        "Cognome": "Cecchi",
+        "Eta": 18,
+        "Indirizzo": "Via Casa 9",
+        "Citta": "Milano",
+        "Telefono": "1234567890"
+    },
+    {
+        "Nome": "Marco",
+        "Cognome": "Rashford",
+        "Eta": 31,
+        "Indirizzo": "Via Etna 3",
+        "Citta": "Como",
+        "Telefono": "0987624321"
+    },
+    {
+        "Nome": "Giacomo",
+        "Cognome": "Esposito",
+        "Eta": 57,
+        "Indirizzo": "Via Maradona 3",
+        "Citta": "Napoli",
+        "Telefono": "5433476765"
+    }
+]
