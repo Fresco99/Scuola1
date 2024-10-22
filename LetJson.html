@@ -30,7 +30,7 @@
             if ( x.status === 200) { 
                 var DatIns = JSON.parse(x.responseText);
                 var tBody = document.getElementById("Stampa").getElementsByTagName("BodyTabella")[0];
-                for (var i = 0; i < data.length; i++) {
+                for (var i = 0; i < DatIns.length; i++) {
                     var DatiInseriti = DatIns[i];
                     var riga = "<tr>" +
                         "<td>" + DatiInseriti.Nome + "</td>" +
