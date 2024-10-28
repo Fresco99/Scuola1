@@ -26,7 +26,7 @@
         var x = new XMLHttpRequest();
         x.open("GET", "DatiIns1.json", true);
         x.onreadystatechange = function () {
-            if ( x.status === 200) {
+            if (x.readyState === 4 && x.status === 200) {
                 var DatIns = JSON.parse(x.responseText);
                 var tBody = document.getElementById("Stampa").getElementsByTagName("tbody")[0];
                 for (var i = 0; i < DatIns.length; i++) {
@@ -34,23 +34,23 @@
                     var riga = "<tr>" +
                         "<td>" + DatiInseriti.Nome + "</td>" +
                         "<td>" + DatiInseriti.Cognome + "</td>" +
-                        "<td>" + DatiInseriti.Eta + "</td>" +
+                        "<td>" + DatiInseriti.Eta + "</td>" +  // Assicurati che il JSON usi "Eta" o "Età"
                         "<td>" + DatiInseriti.Indirizzo + "</td>" +
-                        "<td>" + DatiInseriti.Citta + "</td>";
-                        for (var j = 0; j < DatiInseriti.Telefono.length; j++) {
-                        riga += DatiInseriti.Telefono[j] + "</td>";
-                       
+                        "<td>" + DatiInseriti.Citta + "</td>" +
+                        "<td>"; // Apertura del <td> per i telefoni
+
+                    for (var j = 0; j < DatiInseriti.Telefono.length; j++) {
+                        riga += DatiInseriti.Telefono[j];
+                        if (j < DatiInseriti.Telefono.length - 1) {
+                            riga += ", "; // Aggiungi una virgola tra i numeri
+                        }
                     }
 
-                 tBody.innerHTML += riga;
-                    
-                   
-                    
-                    
+                    riga += "</td></tr>"; // Chiusura del <td> e del <tr>
+                    tBody.innerHTML += riga;
                 }
-                 
             }
-        
+        };
         x.send();
     </script>
 </body>
