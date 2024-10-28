@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LetJson</title>
-    
 </head>
 <body>
     <h1>LetJson</h1>
@@ -20,16 +19,16 @@
                 <th>Telefono</th>
             </tr>
         </thead>
-        <BodyTabella>
-        </BodyTabella>
+        <tbody>
+        </tbody>
     </table>
     <script>
         var x = new XMLHttpRequest();
         x.open("GET", "DatiIns.json", true);
         x.onreadystatechange = function () {
-            if ( x.status === 200) { 
+            if ( x.status === 200) {
                 var DatIns = JSON.parse(x.responseText);
-                var tBody = document.getElementById("Stampa").getElementsByTagName("BodyTabella")[0];
+                var tBody = document.getElementById("Stampa").getElementsByTagName("tbody")[0];
                 for (var i = 0; i < DatIns.length; i++) {
                     var DatiInseriti = DatIns[i];
                     var riga = "<tr>" +
@@ -40,7 +39,7 @@
                         "<td>" + DatiInseriti.Citta + "</td>" +
                         "<td>" + DatiInseriti.Telefono + "</td>" +
                         "</tr>";
-                    BodyTabella.innerHTML += riga;
+                    tBody.innerHTML += riga;
                 }
             }
         }
