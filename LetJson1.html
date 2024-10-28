@@ -41,12 +41,11 @@
 
                     for (var j = 0; j < DatiInseriti.Telefono.length; j++) {
                         riga += DatiInseriti.Telefono[j];
-                        if (j < DatiInseriti.Telefono.length - 1) {
-                            riga += ", "; // Aggiungi una virgola tra i numeri
-                        }
+                        
+                       
                     }
 
-                    riga += "</td></tr>"; // Chiusura del <td> e del <tr>
+                    riga += "</td></tr>"; 
                     tBody.innerHTML += riga;
                 }
             }
