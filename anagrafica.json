@@ -1,32 +1,29 @@
 [
-  {
-    "Nome": "Mario",
-    "Cognome": "Rossi",
-    "Eta": 30,
-    "Indirizzo": "Via Roma 1",
-    "Citta": "Milano",
-    "Telefono": ["1234567890", "0987654321"],
-    "Immagine": "Cex.jpg",
-    "CV": "cv/mario_rossi.json"
-  },
-  {
-    "Nome": "Giulia",
-    "Cognome": "Bianchi",
-    "Eta": 25,
-    "Indirizzo": "Via Milano 10",
-    "Citta": "Roma",
-    "Telefono": ["0987654321"],
-    "Immagine": "images/giulia_bianchi.jpg",
-    "CV": "cv/giulia_bianchi.json"
-  },
-  {
-    "Nome": "Luca",
-    "Cognome": "Verdi",
-    "Eta": 40,
-    "Indirizzo": "Via Napoli 12",
-    "Citta": "Napoli",
-    "Telefono": ["1122334455"],
-    "Immagine": "images/luca_verdi.jpg",
-    "CV": "cv/luca_verdi.json"
-  }
+    {
+        "Nome": "Simone",
+        "Cognome": "Cecchi",
+        "Eta": 18,
+        "Indirizzo": "Via Casa 9",
+        "Citta": "Milano",
+        "Telefono": ["1234567890","",""]
+        "Immagine": "Cex.jpg"
+    },
+    {
+        "Nome": "Marco",
+        "Cognome": "Rashford",
+        "Eta": 31,
+        "Indirizzo": "Via Etna 3",
+        "Citta": "Como",
+        "Telefono": ["0987624321","7303850187","1346296739"]
+        "Immagine": "Rashford.jpg"
+    },
+    {
+        "Nome": "Giacomo",
+        "Cognome": "Esposito",
+        "Eta": 57,
+        "Indirizzo": "Via Maradona 3",
+        "Citta": "Napoli",
+        "Telefono":[ "5433476765","7823746920",""]
+        "Immagine": "Espo.jpg"
+    }
 ]
