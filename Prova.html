@@ -48,15 +48,15 @@
     <script>
         
         var x = new XMLHttpRequest();
-        x.open("GET", "anagrafica1.json", true); // Percorso del file JSON
+        x.open("GET", "anagrafica1.json", true);
         x.onreadystatechange = function () {
             if (x.status === 200 && x.readyState === 4) {
                 var DatIns = JSON.parse(x.responseText); // Parsing del JSON
                 var tBody = document.getElementById("Stampa").getElementsByTagName("tbody")[0];
                 
-                // Ciclo per ogni persona nel file JSON
+              
                 for (var i = 0; i < DatIns.length; i++) {
-                    var DatiInseriti = DatIns[i];  // Dati per ogni persona
+                    var DatiInseriti = DatIns[i]; 
                     var riga = "<tr>" +
                         
                         
