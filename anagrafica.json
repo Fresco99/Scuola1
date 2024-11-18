@@ -6,7 +6,7 @@
     "Indirizzo": "Via Roma 1",
     "Citta": "Milano",
     "Telefono": ["1234567890", "0987654321"],
-    "Immagine": "images/mario_rossi.jpg",
+    "Immagine": "Cex.jpg",
     "CV": "cv/mario_rossi.json"
   },
   {
