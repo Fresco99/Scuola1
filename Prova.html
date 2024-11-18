@@ -4,27 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LetJson</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        img {
-            width: 50px; /* Puoi regolare la larghezza dell'immagine */
-            height: 50px; /* Puoi regolare l'altezza dell'immagine */
-        }
-        a {
-            color: blue;
-            text-decoration: underline;
-        }
-    </style>
+    
 </head>
 <body>
     <h1>LetJson</h1>
@@ -33,14 +13,14 @@
     <table id="Stampa">
         <thead>
             <tr>
-                <th>Immagine</th>
+                
                 <th>Nome</th>
                 <th>Cognome</th>
                 <th>Età</th>
                 <th>Indirizzo</th>
                 <th>Città</th>
                 <th>Telefono</th>
-                <th>CV</th>
+                <th>Immagine</th>
             </tr>
         </thead>
         <tbody>
@@ -48,7 +28,7 @@
     </table>
     
     <script>
-        // Creazione della richiesta per caricare il file JSON
+        
         var x = new XMLHttpRequest();
         x.open("GET", "anagrafica.json", true); // Percorso del file JSON
         x.onreadystatechange = function () {
@@ -61,45 +41,31 @@
                     var DatiInseriti = DatIns[i];  // Dati per ogni persona
                     var riga = "<tr>" +
                         
-                        // Colonna Immagine
-                        "<td><img src='" + DatiInseriti.Immagine + "' alt='" + DatiInseriti.Nome + " " + DatiInseriti.Cognome + "'></td>" +
                         
-                        // Colonna Nome
+                        
+                        
+                        
                         "<td>" + DatiInseriti.Nome + "</td>" +
-                        
-                        // Colonna Cognome
                         "<td>" + DatiInseriti.Cognome + "</td>" +
-                        
-                        // Colonna Età
                         "<td>" + DatiInseriti.Eta + "</td>" +
-                        
-                        // Colonna Indirizzo
                         "<td>" + DatiInseriti.Indirizzo + "</td>" +
-                        
-                        // Colonna Città
                         "<td>" + DatiInseriti.Citta + "</td>" +
-                        
-                        // Colonna Telefono
                         "<td>";
-                        
-                    // Aggiunta dei numeri di telefono
                     for (var j = 0; j < DatiInseriti.Telefono.length; j++) {
-                        riga += (j > 0 ? ", " : "") + DatiInseriti.Telefono[j];
+                        riga += "," + DatiInseriti.Telefono[j];
                     }
                     
                     riga += "</td>" +
+                        "<td><img src='" + DatiInseriti.Immagine + "' alt='" + DatiInseriti.Nome + " " + DatiInseriti.Cognome + "'></td>" ;
                     
-                    // Colonna CV (Link al file JSON del CV)
-                    "<td><a href='" + DatiInseriti.CV + "' target='_blank'>Visualizza CV</a></td>" +
-                    
-                    "</tr>";
+                   
 
-                    // Aggiunge la riga al corpo della tabella
+                    
                     tBody.innerHTML += riga;
                 }
             }
         };
-        x.send();  // Invio della richiesta
+        x.send();  
     </script>
 </body>
 </html>
