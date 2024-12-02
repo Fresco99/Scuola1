@@ -46,6 +46,8 @@
                 <th>Città</th>
                 <th>Telefono</th>
                 <th>Immagine</th>
+                <th>Portfolio</th>
+
             </tr>
         </thead>
         <tbody>
@@ -82,7 +84,10 @@
                     
                     riga += "</td>" +
                         "<td><img src='" + DatiInseriti.Immagine + "'></td>" ;
-                    
+
+                    riga += "<td><a href='" + DatiInseriti.Portfolio + "' target='_blank'>" +
+                    "<img class='icon' src='https://cdn-icons-png.flaticon.com/512/69/69968.png' alt='Portfolio'></a></td>";
+
                    
 
                     
