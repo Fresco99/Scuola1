@@ -6,7 +6,9 @@
         "Indirizzo": "Via Casa 9",
         "Citta": "Milano",
         "Telefono": ["1234567890","",""]
-        "Immagine": "Cex.jpg"
+        "Immagine": "Cex.jpg",
+        "Portfolio":"Portfolio1.html"
+        
     },
     {
         "Nome": "Marco",
@@ -16,6 +18,7 @@
         "Citta": "Como",
         "Telefono": ["0987624321","7303850187","1346296739"]
         "Immagine": "Rashford.jpg"
+        "Portfolio":"Portfolio3.html"
     },
     {
         "Nome": "Giacomo",
@@ -25,5 +28,6 @@
         "Citta": "Napoli",
         "Telefono":[ "5433476765","7823746920",""]
         "Immagine": "Espo.jpg"
+        "Portfolio":"Portfolio2.html"
     }
 ]
