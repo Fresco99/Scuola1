@@ -1,5 +1,5 @@
 [
-  {
+    {
         "Nome": "Simone",
         "Cognome": "Cecchi",
         "Eta": 18,
@@ -9,6 +9,5 @@
         "Laurea": "Bocconi",
         "EspLavora": "Barista Serale in centro a Milano",
         "SoftSkill": "Gestire tante persone"
-        
-    },
+    }
 ]
