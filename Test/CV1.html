@@ -11,11 +11,11 @@
             if (x.status === 200 && x.readyState === 4) {
                 var DatIns = JSON.parse(x.responseText); 
                 
-                // Itera sugli oggetti e aggiorna il contenuto della pagina
+                
                 for (var i = 0; i < DatIns.length; i++) {
                     var DatiInseriti = DatIns[i]; 
 
-                    // Creazione di un nuovo contenitore per ogni oggetto
+                    
                     var container = document.createElement("div");
                     container.innerHTML = 
                         "<p><strong>Nome:</strong> " + DatiInseriti.Nome + "</p>" +
@@ -29,7 +29,7 @@
                         "<p><strong>Soft Skill:</strong> " + DatiInseriti.SoftSkill + "</p>" +
                         "<hr>";
 
-                    // Aggiunge il contenuto generato al contenitore principale
+                    
                     document.getElementById("output").appendChild(container);
                 }
             }
