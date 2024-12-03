@@ -1,1 +1,13 @@
-
+[
+    {
+        "Nome": "Marco",
+        "Cognome": "Rashford",
+        "Eta": 31,
+        "Indirizzo": "Via Etna 3",
+        "Citta": "Como",
+        "Diploma": "Liceo Sportivo El football",
+        "Laurea": "El soccer",
+        "EspLavora": "Calciatore titolare al manchester united",
+        "SoftSkill": "Correre"
+    }
+]
