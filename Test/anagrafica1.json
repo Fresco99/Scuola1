@@ -5,10 +5,9 @@
         "Eta": 18,
         "Indirizzo": "Via Casa 9",
         "Citta": "Milano",
-        "Telefono": ["1234567890","",""],
+        "Telefono": ["1234567890"],
         "Immagine": "Cex.jpg",
-        "Portfolio":"Portfolio1.html"
-        
+        "Portfolio": "Portfolio1.html"
     },
     {
         "Nome": "Marco",
@@ -16,9 +15,9 @@
         "Eta": 31,
         "Indirizzo": "Via Etna 3",
         "Citta": "Como",
-        "Telefono": ["0987624321","7303850187","1346296739"],
-        "Immagine": "Rashford.jpg"
-        "Portfolio":"Portfolio3.html"
+        "Telefono": ["0987624321", "7303850187", "1346296739"],
+        "Immagine": "Rashford.jpg",
+        "Portfolio": "Portfolio3.html"
     },
     {
         "Nome": "Giacomo",
@@ -26,8 +25,8 @@
         "Eta": 57,
         "Indirizzo": "Via Maradona 3",
         "Citta": "Napoli",
-        "Telefono":[ "5433476765","7823746920",""],
-        "Immagine": "Espo.jpg"
-        "Portfolio":"Portfolio2.html"
+        "Telefono": ["5433476765", "7823746920"],
+        "Immagine": "Espo.jpg",
+        "Portfolio": "Portfolio2.html"
     }
 ]
