@@ -6,22 +6,21 @@
     <title>Document</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f9f9f9;
             font-family: Arial, sans-serif;
+            padding-top: 30px; /* Distanza dal bordo superiore */
         }
         #output {
-            text-align: center;
+            text-align: left; /* Allineamento a sinistra per il testo */
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
+            width: 80%; /* Larghezza del contenuto */
+            max-width: 600px; /* Larghezza massima */
+            margin-top: 10px; /* Spazio tra il titolo e il contenuto */
         }
         p {
             margin: 10px 0;
@@ -33,6 +32,7 @@
         }
         h1 {
             text-align: center;
+            margin: 0;
         }
     </style>
     <script>
@@ -45,7 +45,7 @@
                 for (var i = 0; i < DatIns.length; i++) {
                     var DatiInseriti = DatIns[i]; 
 
-                    
+                    // Creazione di un nuovo contenitore per ogni oggetto
                     var container = document.createElement("div");
                     container.innerHTML = 
                         "<p><strong>Nome:</strong> " + DatiInseriti.Nome + "</p>" +
@@ -58,12 +58,12 @@
                         "<p><strong>Esperienza Lavorativa:</strong> " + DatiInseriti.EspLavora + "</p>" +
                         "<p><strong>Soft Skill:</strong> " + DatiInseriti.SoftSkill + "</p>";
                     
-                    
+                    // Aggiungi una linea orizzontale dopo ogni blocco, ma non per l'ultimo
                     if (i < DatIns.length - 1) {
                         container.innerHTML += "<hr>";
                     }
 
-                    
+                    // Aggiunge il contenuto generato al contenitore principale
                     document.getElementById("output").appendChild(container);
                 }
             }
@@ -72,8 +72,9 @@
     </script>
 </head>
 <body>
-    <h1>CV CECCHI</h1>
-    <div id="output"></div>
+    <center>
+        <h1>CV CECCHI</h1>
+        <div id="output"></div>
+    </center>
 </body>
 </html>
-
