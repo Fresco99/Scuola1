@@ -15,7 +15,7 @@
                 for (var i = 0; i < DatIns.length; i++) {
                     var DatiInseriti = DatIns[i]; 
 
-                    // Crea un nuovo elemento HTML per ogni oggetto
+                    
                     var container = document.createElement("div");
                     container.innerHTML = `
                         <p><strong>Nome:</strong> ${DatiInseriti.Nome}</p>
@@ -30,16 +30,16 @@
                         <hr>
                     `;
 
-                    // Aggiungi l'elemento alla pagina
+                    
                     document.getElementById("output").appendChild(container);
                 }
             }
         };
-        x.send(); // Invia la richiesta
+        x.send(); 
     </script>
 </head>
 <body>
-    <h1>Dettagli Anagrafici</h1>
+    <h1>CV CECCHI</h1>
     <div id="output"></div>
 </body>
 </html>
