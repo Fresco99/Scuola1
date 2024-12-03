@@ -15,22 +15,21 @@
                 for (var i = 0; i < DatIns.length; i++) {
                     var DatiInseriti = DatIns[i]; 
 
-                    
+                    // Creazione di un nuovo contenitore per ogni oggetto
                     var container = document.createElement("div");
-                    container.innerHTML = `
-                        <p><strong>Nome:</strong> DatiInseriti.Nome</p>
-                        <p><strong>Cognome:</strong> DatiInseriti.Cognome</p>
-                        <p><strong>Età:</strong> DatiInseriti.Eta</p>
-                        <p><strong>Indirizzo:</strong> DatiInseriti.Indirizzo</p>
-                        <p><strong>Città:</strong> DatiInseriti.Citta</p>
-                        <p><strong>Diploma:</strong> DatiInseriti.Diploma</p>
-                        <p><strong>Laurea:</strong> DatiInseriti.Laurea</p>
-                        <p><strong>Esperienza Lavorativa:</strong> DatiInseriti.EspLavora</p>
-                        <p><strong>Soft Skill:</strong> DatiInseriti.SoftSkill</p>
-                        <hr>
-                    `;
+                    container.innerHTML = 
+                        "<p><strong>Nome:</strong> " + DatiInseriti.Nome + "</p>" +
+                        "<p><strong>Cognome:</strong> " + DatiInseriti.Cognome + "</p>" +
+                        "<p><strong>Età:</strong> " + DatiInseriti.Eta + "</p>" +
+                        "<p><strong>Indirizzo:</strong> " + DatiInseriti.Indirizzo + "</p>" +
+                        "<p><strong>Città:</strong> " + DatiInseriti.Citta + "</p>" +
+                        "<p><strong>Diploma:</strong> " + DatiInseriti.Diploma + "</p>" +
+                        "<p><strong>Laurea:</strong> " + DatiInseriti.Laurea + "</p>" +
+                        "<p><strong>Esperienza Lavorativa:</strong> " + DatiInseriti.EspLavora + "</p>" +
+                        "<p><strong>Soft Skill:</strong> " + DatiInseriti.SoftSkill + "</p>" +
+                        "<hr>";
 
-                    
+                    // Aggiunge il contenuto generato al contenitore principale
                     document.getElementById("output").appendChild(container);
                 }
             }
