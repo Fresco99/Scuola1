@@ -1,0 +1,14 @@
+[
+  {
+        "Nome": "Simone",
+        "Cognome": "Cecchi",
+        "Eta": 18,
+        "Indirizzo": "Via Casa 9",
+        "Citta": "Milano",
+        "Diploma": "Liceo Scientifico Ettore Majorana",
+        "Laurea": "Bocconi",
+        "EspLavora": "Barista Serale in centro a Milano",
+        "SoftSkill": "Gestire tante persone"
+        
+    },
+]
