@@ -10,7 +10,7 @@
             x.onreadystatechange = function () {
             if (x.status === 200 && x.readyState === 4) {
                 var DatIns = JSON.parse(x.responseText); 
-                document.getElementById("nome").innerHTML
+                document.getElementById("nome").innerHTML=DatIns.nome;
                 
               
     </script>
