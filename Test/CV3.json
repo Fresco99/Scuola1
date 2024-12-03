@@ -1,13 +1,13 @@
 [
     {
-        "Nome": "Marco",
-        "Cognome": "Rashford",
-        "Eta": 31,
-        "Indirizzo": "Via Etna 3",
-        "Citta": "Como",
-        "Diploma": "Liceo Sportivo El football",
-        "Laurea": "El soccer",
-        "EspLavora": "Calciatore titolare al Manchester United",
-        "SoftSkill": "Correre"
+        "Nome": "Giacomo",
+        "Cognome": "Esposito",
+        "Eta": 57,
+        "Indirizzo": "Via Maradona 3",
+        "Citta": "Napoli",
+        "Diploma": "Perito informatico",
+        "Laurea": "Economia",
+        "EspLavora": "vice direttore banca d'italia",
+        "SoftSkill": "Gestire conti complessi"
     }
 ]
