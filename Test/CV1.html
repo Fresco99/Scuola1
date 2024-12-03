@@ -6,11 +6,16 @@
     <title>Document</title>
     <script>
             var x = new XMLHttpRequest();
-            x.open("GET", "CV1.json", true);
-            x.onreadystatechange = function () {
+        x.open("GET", "anagrafica1.json", true);
+        x.onreadystatechange = function () {
             if (x.status === 200 && x.readyState === 4) {
                 var DatIns = JSON.parse(x.responseText); 
-                document.getElementById("nome").innerHTML+=DatIns.nome;
+               
+                
+              
+                for (var i = 0; i < DatIns.length; i++) {
+                    var DatiInseriti = DatIns[i]; 
+                document.getElementById("nome").innerHTML+=DatiInseriti.nome;
                 
               
     </script>
