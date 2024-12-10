@@ -8,7 +8,7 @@
         let prova = document.location.search;
         prova = prova.split('=');
         var x = new XMLHttpRequest();
-        x.open("GET", "CV1.json", true);
+        x.open("GET", prova[1], true);
         x.onreadystatechange = function () {
             if (x.status === 200 && x.readyState === 4) {
                 var DatIns = JSON.parse(x.responseText); 
