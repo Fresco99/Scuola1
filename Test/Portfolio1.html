@@ -9,7 +9,7 @@
 prova = prova.split('=');
 alert(prova[1]);
    var x = new XMLHttpRequest();
-    x.open("GET", "Portfolio1.xml", true);  
+    x.open("GET", prova[1], true);  
     x.onload = function() {
         if (x.status === 200) {
             var data = x.responseXML;
