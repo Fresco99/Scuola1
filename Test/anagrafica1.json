@@ -7,7 +7,7 @@
         "Citta": "Milano",
         "Telefono": ["1234567890"],
         "Immagine": "Cex.jpg",
-        "LinkCV": "CV1.html",
+        "LinkCV": "CV1.json",
         "Portfolio": "Portfolio1.xml"
     },
     {
@@ -18,7 +18,7 @@
         "Citta": "Como",
         "Telefono": ["0987624321", "7303850187", "1346296739"],
         "Immagine": "Rashford.jpg",
-        "LinkCV": "CV2.html",
+        "LinkCV": "CV2.json",
         "Portfolio": "Portfolio2.xml"
     },
     {
@@ -29,7 +29,7 @@
         "Citta": "Napoli",
         "Telefono": ["5433476765", "7823746920"],
         "Immagine": "Espo.jpg",
-        "LinkCV": "CV3.html",
+        "LinkCV": "CV3.json",
         "Portfolio": "Portfolio3.xml"
     }
 ]
