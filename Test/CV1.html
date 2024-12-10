@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        let prova = document.location.search;
+        prova = prova.split('=');
         var x = new XMLHttpRequest();
         x.open("GET", "CV1.json", true);
         x.onreadystatechange = function () {
