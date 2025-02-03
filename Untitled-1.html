@@ -2,33 +2,27 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Elenca post WordPress</title>
-    <style>
-        body {
-            background-image: url(stelle.gif);
-            background-attachment: fixed;
-            background-size: cover;
-        }
-    </style>
+    <title>Elenca notizie sulla cultura </title>
+    
 </head>
 <body>
-    <h1>Elenca post WordPress</h1>
-    <ul id="lista"></ul>
+    <h1>Elenca notizie sulla cultura</h1>
+    <ul id="inizio"></ul>
 
     <script>
-        // URL del servizio REST di TicketOne
+        
         const apiUrl = 'https://www.artribune.com/wp-json/wp/v2/posts';
 
 
         async function trova() {
             const risposta = await fetch(apiUrl);
             const posts = await risposta.json();
-            const lista = document.getElementById('lista');
+            const inizio = document.getElementById('inizio');
 
             posts.forEach(post => {
-                const listItem = document.createElement('li');
-                listItem.innerHTML = `<a href="${post.link}" target="_blank">${post.title.rendered}</a>`;
-                lista.appendChild(listItem);
+                const lista = document.createElement('li');
+                lista.innerHTML = `<a href="${post.link}" target="_blank">${post.title.rendered}</a>`;
+                inizio.appendChild(lista);
             });
         }
 
