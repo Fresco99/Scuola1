@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizzazione</title>
+</head>
+<body>
+    <p id="pos"></p>
+    <div id="map"></div>
+
+    <script>
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(ok, err);
+        } else {
+            alert("Devi autorizzare la geolocalizzazione.");
+        }
+
+        function err(e) {
+            alert("Errore: " + e.message);
+        }
+
+        function ok(data) {
+            var lat = data.coords.latitude;
+            var lon = data.coords.longitude;
+
+            // Mostra le coordinate nel testo
+            document.getElementById("pos").textContent = 
+                "Posizione:\nLon: " + lon + "\nLat: " + lat;
+
+            // Crea l'iframe di Google Maps
+            var frame = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000.000000000000!2d' 
+                + lon + '!3d' + lat 
+                + '!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+
+            document.getElementById("map").innerHTML = frame;
+        }
+    </script>
+</body>
+</html>
